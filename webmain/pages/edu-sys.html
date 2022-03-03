@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Educenter</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/static/template/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/template/plugins/slick/slick.css">
+    <link rel="stylesheet" href="/static/template/plugins/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/static/template/plugins/animate/animate.css">
+    <link rel="stylesheet" href="/static/template/plugins/aos/aos.css">
+    <link rel="stylesheet" href="/static/template/plugins/venobox/venobox.css">
+    <link rel="stylesheet" href="/static/template/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/static/template/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/static/template/images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- preloader start -->
+  <div class="preloader">
+    <img src="/static/template/images/preloader.gif" alt="preloader">
+  </div>
+  <!-- preloader end -->
+
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+  <div class="top-header py-2 bg-white">
+      <div class="container">
+          <div class="row no-gutters">
+              <div class="col-lg-4 text-center text-lg-left">
+                  <a class="text-color mr-3" href="callto:+05346830034"><strong>CALL</strong> +90 534 683 00 34</a>
+                  <ul class="list-inline d-inline">
+                      <li class="list-inline-item mx-0">
+                          <a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a>
+                      </li>
+                      <li class="list-inline-item mx-0">
+                          <a class="d-inline-block p-2 text-color" href="#"><i class="ti-twitter-alt"></i></a>
+                      </li>
+                      <li class="list-inline-item mx-0">
+                          <a class="d-inline-block p-2 text-color" href="#"><i class="ti-linkedin"></i></a>
+                      </li>
+                      <li class="list-inline-item mx-0">
+                          <a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-lg-8 text-center text-lg-right">
+                  <ul class="list-inline">
+                      <li class="list-inline-item">
+                          <a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="messages" style="display: none;">messages</a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a>
+                      </li>
+                      <li class="list-inline-item" id = "update-user-area" style="display: none;">
+                          <a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#updateUserModal">updateUser</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- navbar -->
+  <div class="navigation w-100">
+      <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-dark p-0">
+              <a class="navbar-brand" href="/"><img src="/static/template/images/logo.png"
+                      alt="logo"></a>
+              <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse"
+                  data-target="#navigation" aria-controls="navigation" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navigation">
+                  <ul class="navbar-nav ml-auto text-center">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="/">Home</a>
+                      </li>
+                      <li class="nav-item @@about">
+                          <a class="nav-link" href="/about-us">About</a>
+                      </li>
+                      <li class="nav-item dropdown view">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Universities
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="/universities">Universities</a> 
+                              <a class="dropdown-item" href="/programs">Programs</a> 
+                          </div>
+                      </li>
+                      <li class="nav-item @@events">
+                          <a class="nav-link" href="/cities">Cities</a>
+                      </li> 
+                      <li class="nav-item dropdown view">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Why Turkey
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="/why-turkey">10 Reasons to Study in Turkey</a> 
+                              <a class="dropdown-item" href="/edu-sys">Turkish Higher Education System</a> 
+                          </div>
+                      </li>
+                      <li class="nav-item dropdown view">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              For Students
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="/tutorial">Tutorial</a>
+                              <a class="dropdown-item" href="/all-fraq">Frequently Asked Questions</a>
+                              <a class="dropdown-item" href="/students">Students</a> 
+                          </div>
+                      </li>
+                      <li class="nav-item @@contact">
+                          <a class="nav-link" href="/contact">CONTACT</a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+  </div>
+</header>
+<!-- /header -->
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Register</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="#" class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- page title -->
+<section class="page-title-section overlay" data-background="/static/template/images/backgrounds/page-title.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="notice.html">Turkish Higher Education System</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- notice details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mb-4">
+        <!-- course thumb -->
+        <img src="/assets/images/edu-sys.png" class="img-fluid w-100">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex">
+  
+          <div>
+            <h3 class="mb-4">General Structure</h3>
+            <p>In 1981, in accordance with the new Higher Education Law (No. 2547), the administration of higher education in Turkey was comprehensively restructured. The system thereby became centralized, with all higher education institutions tied to the Council of Higher Education (CoHE). After this restructuring, all institutions of higher education were designed as universities. Expansion of higher education throughout the country was achieved, application to higher education was centralized, and a central university exam and placement were introduced. In addition to public universities, the first nonprofit foundation university in Turkey started to provide education for students in 1986.</p>
+            <p>Since 2012, compulsory education in Turkey lasts 12 years and is divided in three stages (primary education, elemantary education and secondary education).</p>
+            <p><b>Pre-primary School Education</b> : It involves the education of children in the age group of 3 to 5 who have not reached the age of compulsory primary education, on an optional basis.</p>
+            <p><b>Primary Education</b> : It involves the education and training of children in the age group of 6 to 10. Primary education is compulsory for all citizens. It is free at the State schools and lasts four years (1st, 2nd, 3rd, 4th grades).</p>
+            <p><b>Elemantary Education</b> : It involves the education and training of children in the age group of 10 to 14. Elemantary education is compulsory for all citizens. It is free at the State schools and lasts four years (5th, 6th, 7nd, 8th grades). Towards the end of the elemantary school, pupils are given information about both general, vocational and technical high schools and the kinds of employment they prepare for.</p>
+            <p><b>Secondary Education</b> : It comprises high schools of a general or vocational and/or technical character giving four-year courses aiming children at the age of 14 to 17 (9th, 10th, 11th, 12th grades). Secondary education is compulsory for all citizens and is free at the State schools.</p>
+            <p><b>Higher Education</b> : After graduating from high school, students can enroll in higher education, which is compatible with the Bologna three-cycle system.</p>
+            <hr>
+            <h3 class="mb-4">Types Of Higher Education Institutions And Academic Units</h3>
+            <p><b>Faculty (College):</b>  A division conducting higher education, scholarly research and publication. Various departments and programmes  may  be  connected  to it. Students earn a Bachelor’s degree at the end of an educational programme that lasts for at least four years.</p>
+            <p><b>Graduate School:</b>  An institution in universities concerned with graduate education, scholarly research and applications. Graduate schools award MA, MSc or PhD degrees.</p>
+            <p><b>4-year School:</b>  An institution of higher education which is mainly concerned with providing instruction for a specific profession. It lasts for eight semesters.</p>
+            <p><b>Conservatory:</b>  An institution of higher education in which artists are trained for music and the performing arts. It lasts for eight semesters.</p>
+            <p><b>Post-Secondary Vocational School:</b>  An institution of higher education that is aimed at training human capacity in specific professions and provides instruction lasting four semesters.</p>
+            <p><b>Research and Application Center:</b>  An institution of higher education carrying out research and applied studies to meet the applied study needs of various areas and to provide preparatory and support activities for various professional areas, with the aim of supporting education in institutions of higher education.</p>
+            <hr>
+            <h3 class="mb-4">Degrees</h3>
+            <p><b>Associate's degree (short cycle):</b>  Awarded on completion of a two-year study program. The associate degree programs are offered by universities and foundation postsecondary vocational schools. Some distance education programs are also available. The associate degree programs may require a period of on-the-job training.</p>
+            <p><b>Bachelor's degree (1st cycle):</b>  Awarded after the completion of a four-year course and 240 ECTS  of study. The duration of study for dentistry, veterinary medicine and pharmacy is five years and that of medicine is six years. The qualifications in these four fields are considered to be the equivalent of a Master's degree.</p>
+            <p><b>Master's degree program (2nd cycle):</b> Two-year program leading to the Master of Arts (MA) or Master of Sciences (MS). There are two kinds of Master's programs, with or without a thesis. The Master's with thesis program is a two-year program generally consisting courses with a minimum of 120 ECTS followed by submission of a thesis. Non-thesis programs are to be completed in one or one and a half years and call for the completion of graduate courses of a minimum 90 credits and a term project.</p>
+            <p><b>Doctoral degree program (3rd cycle):</b>  Usually an eight-semester program leading to the PhD degree. It consists of courses, with 180-240 ECTS, a proficiency exam, a dissertation proposal, a dissertation and its oral defense. After successful completion of the course work and the proficiency exam, students must submit the dissertation and defend it orally before an examining committee.</p>
+            <p><b>Specialization in Medicine Programs:</b>  They are equivalent to doctoral degree programs and are carried out in the faculties of medicine, university hospitals and research and training hospitals. For the specialization in medicine, there is a competitive selection examination in various branches of medicine for those graduating from the faculties of medicine. Specialist candidates are required to submit a dissertation and defend it before an examining committee.</p>
+            <p><b>Proficiency in Art:</b>  It is at least a six-semester post-Master's program in the visual and performing art branches making it equivalent to a Doctorate. It requires the presentation of an original work of art or (in music and the performing arts) a superior, creative performance.</p>
+            <hr>
+            <h3 class="mb-4">International Student Admissions</h3>
+            <p>International students who wish to undertake their undergraduate studies in Turkey must have completed their secondary education in a high school or similar institution in which the education is equivalent to that of a Turkish high school. They apply directly to the university of their choice and the university makes the selection.</p>
+            <p>nternational students who wish to pursue their graduate / post-graduate studies in Turkey also apply directly to the universities, which set their own admissions requirements. There are also various scholarship options which are available for some international students.</p>
+            <p><b>Proficiency in Art:</b>  It is at least a six-semester post-Master's program in the visual and performing art branches making it equivalent to a Doctorate. It requires the presentation of an original work of art or (in music and the performing arts) a superior, creative performance.</p>
+            <hr>
+            <h3 class="mb-4">Tuition Fees</h3>
+            <p>Tuition fees are applied differently in public and non-profit foundation universities. In public universities, tuition fees are decided and announced by the Presidencial Decree, taking into consideration the type and duration of study in different disciplines. In non-profit foundation universities, on the other hand, tuition fees are decided by the Board of Trustees of the university.</p>
+            <p>Students must pay their tuition fees for each semester before registering for the courses at the beginning of that specific semester. Both in public and non-profit foundation universities, a certain percentage of the students are admitted to the university are given diverse scholarships. These scholarships may be ful lor partial tuition waiver, merit or support scholarships. Some of these scholarships may meet academic materials, accommodation, food and beverages, and even certain allowances. In addition to this support, student assistantship and the research fellowships are another kind of support that could be helpful during the study in Turkey.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /notice details -->
+
+<!-- footer -->
+<footer>
+
+  <!-- footer content -->
+  <div class="footer bg-footer section border-bottom">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+                  <!-- logo -->
+                  <a class="logo-footer" href="/"><img class="img-fluid mb-4"
+                          src="/static/template/images/logo.png" alt="logo"></a>
+                  <ul class="list-unstyled">
+                      <li class="mb-2">23621 15 Mile Rd #C104, Clinton MI, 48035, New York, USA</li>
+                      <li class="mb-2">+90 534 683 00 34</li> 
+                      <li class="mb-2">akyuzmursel21@gmail.com</li>
+                  </ul>
+              </div>
+              <!-- company -->
+              <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                  <h4 class="text-white mb-5">Universities</h4>
+                  <ul class="list-unstyled">
+                      <li class="mb-3"><a class="text-color" href="/universities">Universities</a></li>
+                      <li class="mb-3"><a class="text-color" href="/programs">Programs</a></li>
+                  </ul>
+              </div>
+              <!-- links -->
+              <div class="col-lg-4 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                  <h4 class="text-white mb-5">Why Turkey</h4>
+                  <ul class="list-unstyled">
+                      <li class="mb-3"><a class="text-color" href="/why-turkey">10 Reasons to Study in Turkey</a></li>
+                      <li class="mb-3"><a class="text-color" href="/edu-sys">Turkish Higher Education System</a></li>
+
+                  </ul>
+              </div>
+              <!-- support -->
+              <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                  <h4 class="text-white mb-5">Pages</h4>
+                  <ul class="list-unstyled">
+                      <li class="mb-3"><a class="text-color" href="/contact">Contact</a></li>
+                      <li class="mb-3"><a class="text-color" href="/about-us">About Us</a></li>
+                      <li class="mb-3"><a class="text-color" href="/contact">Cities</a></li>
+                      <li class="mb-3"><a class="text-color" href="/tutorial">Tutorial</a></li> 
+                      <li class="mb-3"><a class="text-color" href="/all-fraq">Frequently Asked Questions</a></li>
+                  </ul>
+              </div> 
+          </div>
+      </div>
+  </div>
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-7 text-sm-left text-center">
+                  <p class="mb-0">Copyright
+                      <script>
+                          var CurrentYear = new Date().getFullYear()
+                          document.write(CurrentYear)
+                      </script>
+                      © 
+                  </p>
+              </div>
+              <div class="col-sm-5 text-sm-right text-center">
+                  <ul class="list-inline">
+                      <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                                  class="ti-facebook text-primary"></i></a></li>
+                      <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                                  class="ti-twitter-alt text-primary"></i></a></li>
+                      <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                                  class="ti-linkedin text-primary"></i></a></li>
+                      <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                                  class="ti-instagram text-primary"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+    <!-- jQuery -->
+    <script src="/static/template/plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="/static/template/plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="/static/template/plugins/slick/slick.min.js"></script>
+    <!-- aos -->
+    <script src="/static/template/plugins/aos/aos.js"></script>
+    <!-- venobox popup -->
+    <script src="/static/template/plugins/venobox/venobox.min.js"></script>
+    <!-- filter -->
+    <script src="/static/template/plugins/filterizr/jquery.filterizr.min.js"></script>
+    <!-- google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Main Script -->
+    <script src="/static/template/js/script.js"></script>
+    <script src="/static/js/utils/util.js"></script>
+    <script src="/static/js/pages/index.js"></script>
+
+
+</body>
+</html>

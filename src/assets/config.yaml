@@ -1,0 +1,28 @@
+---
+config:
+  db:
+    mySql:
+      connection:
+        host: 127.0.0.1
+        port: "3306"
+        user: "root" 
+        password: "123456"
+      db:
+        dbName: study_turkey
+      tables:
+          - t_user
+    mongo:
+      connection:
+        url: mongodb://localhost:27017/
+      db:
+        dbName: IstanbulOgrenim
+      tables:
+        - UnivercityProgram
+        - university-details
+        - Cities
+        - frequently_questions
+  security:
+    secret: cutthennightwiththelight
+    salt: 5fb2bf309331b3b249340347
+    deviceId: 95C9AF20-7474-45E1-89DF-C59164C6E774
+

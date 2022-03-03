@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Educenter</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="/static/template/plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/template/plugins/slick/slick.css">
+  <link rel="stylesheet" href="/static/template/plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="/static/template/plugins/animate/animate.css">
+  <link rel="stylesheet" href="/static/template/plugins/aos/aos.css">
+  <link rel="stylesheet" href="/static/template/plugins/venobox/venobox.css">
+  <link rel="stylesheet" href="/static/template/css/style.css">
+ 
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/static/template/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="/static/template/images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- preloader start -->
+  <div class="preloader">
+    <img src="/static/template/images/preloader.gif" alt="preloader">
+  </div>
+  <!-- preloader end -->
+
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+  <div class="top-header py-2 bg-white">
+      <div class="container">
+          <div class="row no-gutters">
+              <div class="col-lg-4 text-center text-lg-left">
+                  <a class="text-color mr-3" href="callto:+05346830034"><strong>CALL</strong> +90 534 683 00 34</a>
+                  <ul class="list-inline d-inline">
+                      <li class="list-inline-item mx-0">
+                          <a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a>
+                      </li>
+                      <li class="list-inline-item mx-0">
+                          <a class="d-inline-block p-2 text-color" href="#"><i class="ti-twitter-alt"></i></a>
+                      </li>
+                      <li class="list-inline-item mx-0">
+                          <a class="d-inline-block p-2 text-color" href="#"><i class="ti-linkedin"></i></a>
+                      </li>
+                      <li class="list-inline-item mx-0">
+                          <a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-lg-8 text-center text-lg-right">
+                  <ul class="list-inline">
+                      <li class="list-inline-item">
+                          <a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="messages" style="display: none;">messages</a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a>
+                      </li>
+                      <li class="list-inline-item" id = "update-user-area" style="display: none;">
+                          <a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#updateUserModal">updateUser</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- navbar -->
+  <div class="navigation w-100">
+      <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-dark p-0">
+              <a class="navbar-brand" href="/"><img src="/static/template/images/logo.png"
+                      alt="logo"></a>
+              <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse"
+                  data-target="#navigation" aria-controls="navigation" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navigation">
+                  <ul class="navbar-nav ml-auto text-center">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="/">Home</a>
+                      </li>
+                      <li class="nav-item @@about">
+                          <a class="nav-link" href="/about-us">About</a>
+                      </li>
+                      <li class="nav-item dropdown view">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Universities
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="/universities">Universities</a> 
+                              <a class="dropdown-item" href="/programs">Programs</a> 
+                          </div>
+                      </li>
+                      <li class="nav-item @@events">
+                          <a class="nav-link" href="/cities">Cities</a>
+                      </li> 
+                      <li class="nav-item dropdown view">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Why Turkey
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="/why-turkey">10 Reasons to Study in Turkey</a> 
+                              <a class="dropdown-item" href="/edu-sys">Turkish Higher Education System</a> 
+                          </div>
+                      </li>
+                      <li class="nav-item dropdown view">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              For Students
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="/tutorial">Tutorial</a>
+                              <a class="dropdown-item" href="/all-fraq">Frequently Asked Questions</a>
+                              <a class="dropdown-item" href="/students">Students</a> 
+                          </div>
+                      </li>
+                      <li class="nav-item @@contact">
+                          <a class="nav-link" href="/contact">CONTACT</a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+  </div>
+</header>
+<!-- /header -->
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Register</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="#" class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- page title -->
+<section class="page-title-section overlay" data-background="/static/template/images/backgrounds/page-title.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="/cities">Cities</a></li>
+          <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
+        </ul>
+        <p class="text-lighten">You can list all Turkish cities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- courses -->
+<section class="section">
+  <div class="container">
+    <div class="row" id = "city-area">
+     
+    </div>
+  </div>
+</section>
+<!-- /courses -->
+
+<!-- footer -->
+<footer>
+
+  <!-- footer content -->
+  <div class="footer bg-footer section border-bottom">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+                  <!-- logo -->
+                  <a class="logo-footer" href="/"><img class="img-fluid mb-4"
+                          src="/static/template/images/logo.png" alt="logo"></a>
+                  <ul class="list-unstyled">
+                      <li class="mb-2">23621 15 Mile Rd #C104, Clinton MI, 48035, New York, USA</li>
+                      <li class="mb-2">+90 534 683 00 34</li> 
+                      <li class="mb-2">akyuzmursel21@gmail.com</li>
+                  </ul>
+              </div>
+              <!-- company -->
+              <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                  <h4 class="text-white mb-5">Universities</h4>
+                  <ul class="list-unstyled">
+                      <li class="mb-3"><a class="text-color" href="/universities">Universities</a></li>
+                      <li class="mb-3"><a class="text-color" href="/programs">Programs</a></li>
+                  </ul>
+              </div>
+              <!-- links -->
+              <div class="col-lg-4 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                  <h4 class="text-white mb-5">Why Turkey</h4>
+                  <ul class="list-unstyled">
+                      <li class="mb-3"><a class="text-color" href="/why-turkey">10 Reasons to Study in Turkey</a></li>
+                      <li class="mb-3"><a class="text-color" href="/edu-sys">Turkish Higher Education System</a></li>
+
+                  </ul>
+              </div>
+              <!-- support -->
+              <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                  <h4 class="text-white mb-5">Pages</h4>
+                  <ul class="list-unstyled">
+                      <li class="mb-3"><a class="text-color" href="/contact">Contact</a></li>
+                      <li class="mb-3"><a class="text-color" href="/about-us">About Us</a></li>
+                      <li class="mb-3"><a class="text-color" href="/contact">Cities</a></li>
+                      <li class="mb-3"><a class="text-color" href="/tutorial">Tutorial</a></li> 
+                      <li class="mb-3"><a class="text-color" href="/all-fraq">Frequently Asked Questions</a></li>
+                  </ul>
+              </div> 
+          </div>
+      </div>
+  </div>
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-7 text-sm-left text-center">
+                  <p class="mb-0">Copyright
+                      <script>
+                          var CurrentYear = new Date().getFullYear()
+                          document.write(CurrentYear)
+                      </script>
+                      © 
+                  </p>
+              </div>
+              <div class="col-sm-5 text-sm-right text-center">
+                  <ul class="list-inline">
+                      <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                                  class="ti-facebook text-primary"></i></a></li>
+                      <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                                  class="ti-twitter-alt text-primary"></i></a></li>
+                      <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                                  class="ti-linkedin text-primary"></i></a></li>
+                      <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                                  class="ti-instagram text-primary"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+ <!-- jQuery -->
+ <script src="/static/template/plugins/jQuery/jquery.min.js"></script>
+ <!-- Bootstrap JS -->
+ <script src="/static/template/plugins/bootstrap/bootstrap.min.js"></script>
+ <!-- slick slider -->
+ <script src="/static/template/plugins/slick/slick.min.js"></script>
+ <!-- aos -->
+ <script src="/static/template/plugins/aos/aos.js"></script>
+ <!-- venobox popup -->
+ <script src="/static/template/plugins/venobox/venobox.min.js"></script>
+ <!-- filter -->
+ <script src="/static/template/plugins/filterizr/jquery.filterizr.min.js"></script>
+ <!-- google map -->
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+ <script src="plugins/google-map/gmap.js"></script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <!-- Main Script -->
+ <script src="/static/template/js/script.js"></script>
+ <script src="/static/js/utils/util.js"></script>
+ <script src="/static/js/utils/components.js"></script>
+ <script src="/static/js/pages/cities.js"></script>
+
+
+</body>
+</html>

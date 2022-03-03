@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <title>Educenter</title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/static/template/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/template/plugins/slick/slick.css">
+    <link rel="stylesheet" href="/static/template/plugins/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/static/template/plugins/animate/animate.css">
+    <link rel="stylesheet" href="/static/template/plugins/aos/aos.css">
+    <link rel="stylesheet" href="/static/template/plugins/venobox/venobox.css">
+    <link rel="stylesheet" href="/static/template/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/static/template/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/static/template/images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- preloader start -->
+  <div class="preloader">
+    <img src="/static/template/images/preloader.gif" alt="preloader">
+  </div>
+  <!-- preloader end -->
+
+<!-- header -->
+<header class="fixed-top header">
+  <!-- top header -->
+  <div class="top-header py-2 bg-white">
+      <div class="container">
+          <div class="row no-gutters">
+              <div class="col-lg-4 text-center text-lg-left">
+                  <a class="text-color mr-3" href="callto:+05346830034"><strong>CALL</strong> +90 534 683 00 34</a>
+                  <ul class="list-inline d-inline">
+                      <li class="list-inline-item mx-0">
+                          <a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a>
+                      </li>
+                      <li class="list-inline-item mx-0">
+                          <a class="d-inline-block p-2 text-color" href="#"><i class="ti-twitter-alt"></i></a>
+                      </li>
+                      <li class="list-inline-item mx-0">
+                          <a class="d-inline-block p-2 text-color" href="#"><i class="ti-linkedin"></i></a>
+                      </li>
+                      <li class="list-inline-item mx-0">
+                          <a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-lg-8 text-center text-lg-right">
+                  <ul class="list-inline">
+                      <li class="list-inline-item">
+                          <a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="messages" style="display: none;">messages</a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a>
+                      </li>
+                      <li class="list-inline-item" id = "update-user-area" style="display: none;">
+                          <a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#updateUserModal">updateUser</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- navbar -->
+  <div class="navigation w-100">
+      <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-dark p-0">
+              <a class="navbar-brand" href="/"><img src="/static/template/images/logo.png"
+                      alt="logo"></a>
+              <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse"
+                  data-target="#navigation" aria-controls="navigation" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navigation">
+                  <ul class="navbar-nav ml-auto text-center">
+                      <li class="nav-item active">
+                          <a class="nav-link" href="/">Home</a>
+                      </li>
+                      <li class="nav-item @@about">
+                          <a class="nav-link" href="/about-us">About</a>
+                      </li>
+                      <li class="nav-item dropdown view">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Universities
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="/universities">Universities</a> 
+                              <a class="dropdown-item" href="/programs">Programs</a> 
+                          </div>
+                      </li>
+                      <li class="nav-item @@events">
+                          <a class="nav-link" href="/cities">Cities</a>
+                      </li> 
+                      <li class="nav-item dropdown view">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Why Turkey
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="/why-turkey">10 Reasons to Study in Turkey</a> 
+                              <a class="dropdown-item" href="/edu-sys">Turkish Higher Education System</a> 
+                          </div>
+                      </li>
+                      <li class="nav-item dropdown view">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              For Students
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="/tutorial">Tutorial</a>
+                              <a class="dropdown-item" href="/all-fraq">Frequently Asked Questions</a>
+                              <a class="dropdown-item" href="/students">Students</a> 
+                          </div>
+                      </li>
+                      <li class="nav-item @@contact">
+                          <a class="nav-link" href="/contact">CONTACT</a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+  </div>
+</header>
+<!-- /header -->
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Register</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="login">
+                    <form action="#" class="row">
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control mb-3" id="signupName" name="signupName" placeholder="Name">
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control mb-3" id="signupEmail" name="signupEmail" placeholder="Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content rounded-0 border-0 p-4">
+            <div class="modal-header border-0">
+                <h3>Login</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" class="row">
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginPhone" name="loginPhone" placeholder="Phone">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" id="loginName" name="loginName" placeholder="Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="password" class="form-control mb-3" id="loginPassword" name="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- page title -->
+<section class="page-title-section overlay" data-background="/static/template/images/backgrounds/page-title.jpg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="courses.html">Universities</a></li>
+          <li class="list-inline-item text-white h3 font-secondary nasted" data-id="uni-name"></li>
+        </ul>
+        <p class="text-lighten" data-id="uni-address"></p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+<!-- section -->
+<section class="section-sm">
+  <div class="container">
+    
+    <!-- course info -->  
+    <div class="row align-items-center mb-5">
+      <div class="col-md-5 mb-5">
+        <img class="img-fluid w-100"  data-id="uni-logo">
+      </div>
+      <div class="col-md-6 mb-5">
+        <h3 data-id="uni-name"></h3>
+        <h6 class="text-color" data-id="uni-website-url"></h6>
+        <p class="mb-5" data-id="uni_contact_information_address"></p>
+        <div class="row">
+          <div class="col-md-6 mb-5 mb-md-0">
+            <h4 class="mb-12">CONTACT INFO:</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3"><a class="text-color" href="#"><i class="ti-email mr-2"></i><span data-id="uni_contact_information_mail"></span></a></li>
+              <li class="mb-3"><a class="text-color" href="#"><i class="ti-mobile mr-2"></i><span data-id="uni_contact_information_phone"></span></a></li>
+              <li class="mb-3">
+                <a class="text-color" href="#" data-id="fb"><i class="ti-facebook mr-2"></i></a>
+                <a class="text-color" href="#" data-id="twt"><i class="ti-twitter-alt mr-2"></i></a>
+                <a class="text-color" href="#" data-id="ins"><i class="ti-instagram mr-2"></i></a>
+                
+              </li>
+              <li class="mb-3"><a class="text-color" href="#"><i class="ti-world mr-2"></i><span data-id="uni-website-url"></span></a></li>
+              <li class="mb-3"><a class="text-color" href="#"><i class="ti-location-pin mr-2"></i><span data-id="uni_contact_information_address"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <!-- course details -->
+    <div class="row align-items-center mb-5">
+      <h2 style="margin:auto">Programs</h2>
+      <div class="col-12 row mt-4">
+        <div class="col-3" id="associate_degree_program">
+          <h6 class="text-center">Associate Degree Program</h6>
+          <img src="/assets/images/certificate.png" style="width:100%;"/>
+          <h1 class="count text-center" style="background-color: #ddd;"></h1>
+        </div>
+        <div class="col-3" id="undergraduate_degree_program">
+          <h6 class="text-center">Undergraduate Program</h6>
+          <img src="/assets/images/certificate.png" style="width:100%;"/>
+          <h1 class="count text-center" style="background-color: #ddd;"></h1>
+        </div>
+        <div class="col-3" id="masters_program">
+          <h6 class="text-center">Masters Program</h6>
+          <img src="/assets/images/certificate.png" style="width:100%;"/>
+          <h1 class="count text-center" style="background-color: #ddd;"></h1>
+        </div>
+        <div class="col-3" id="phd_program">
+          <h6 class="text-center">Phd Program</h6>
+          <img src="/assets/images/certificate.png" style="width:100%;"/>
+          <h1 class="count text-center" style="background-color: #ddd;"></h1>
+        </div>
+      </div>
+    </div> 
+    <hr>
+    <div class="row align-items-center mb-5">
+      <h2 style="margin:auto">Number Of Students</h2>
+      <div class="col-12 row mt-4">  
+        <div class="col-3 m-1" id="associate_degree_program_students">
+          <h6 class="text-center">Associate Degree Program</h6>
+          <h1 class="count text-center" style="background-color: #ddd;"></h1>
+        </div>
+        <div class="col-3 m-1" id="undergraduate_degree_program_students">
+          <h6 class="text-center">Undergraduate Program</h6>
+          <h1 class="count text-center" style="background-color: #ddd;"></h1>
+        </div>
+        <div class="col-3 m-1" id="masters_program_students">
+          <h6 class="text-center">Masters Program</h6>
+          <h1 class="count text-center" style="background-color: #ddd;"></h1>
+        </div>
+        <div class="col-2 m-1" id="phd_program_students">
+          <h6 class="text-center">Phd Program</h6>
+          <h1 class="count text-center" style="background-color: #ddd;"></h1>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row align-items-center mb-5">
+      <h2 style="margin:auto">University Opportunities</h2>
+      <div class="col-12 row mt-4">
+        <div class="col-4" id="sports_facilities">
+          <h6 class="text-center">sports facilities</h6>
+          <img src="/assets/images/area.jpg" style="width:100%; height: 200px;"/>
+          <h1 class="count text-center" style="background-color: #ddd;"></h1>
+        </div>
+        <div class="col-4" id="sports_team">
+          <h6 class="text-center">sports team</h6>
+          <img src="/assets/images/sports_team.png" style="width:100%; height: 200px;"/>
+          <h1 class="count text-center" style="background-color: #ddd;"></h1>
+        </div>
+        <div class="col-4" id="student_associations">
+          <h6 class="text-center">student associations</h6>
+          <img src="/assets/images/student_associations.jpg" style="width:100%; height: 200px;"/>
+          <h1 class="count text-center" style="background-color: #ddd;"></h1>
+        </div>
+        <div class="col-4" id="laboratories">
+          <h6 class="text-center">laboratories</h6>
+          <img src="/assets/images/laboratories.jpg" style="width:100%; height: 200px;"/>
+          <h1 class="count text-center" style="background-color: #ddd;"></h1>
+        </div>
+        <div class="col-4" id="area">
+          <h6 class="text-center">area</h6>
+          <img src="/assets/images/area.jpg" style="width:100%; height: 200px;"/>
+          <h1 class="count text-center" style="background-color: #ddd;"></h1>
+        </div>
+        <div class="col-4" id="dormitory_capacity">
+          <h6 class="text-center">dormitory capacity</h6>
+          <img src="/assets/images/dormitory_capacity.jpg" style="width:100%; height: 200px;"/>
+          <h1 class="count text-center" style="background-color: #ddd;"></h1>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row align-items-center mb-5">
+      <h2 style="margin:auto">human resources</h2>
+      <div class="col-12 row mt-4">
+        <div class="col-3">
+          <div class="col-12" id="total_teaching_stuff">
+            <h6 class="text-center">total teaching stuff</h6>
+            <img src="/assets/images/human_resource.jpg" style="width:100%;"/>
+            <h1 class="count text-center" style="background-color: #ddd;"></h1>
+          </div>
+        </div>
+        <div class="col-9 row">
+          <div class="col-4" id="instructor">
+            <h6 class="text-center">Instructor</h6> 
+            <h1 class="count text-center" style="background-color: #ddd;"></h1>
+          </div>
+          <div class="col-4" id="associate_program">
+            <h6 class="text-center">Associate Program</h6> 
+            <h1 class="count text-center" style="background-color: #ddd;"></h1>
+          </div>
+          <div class="col-4" id="research_assistant">
+            <h6 class="text-center">Research Assistant</h6> 
+            <h1 class="count text-center" style="background-color: #ddd;"></h1>
+          </div>
+          <div class="col-4" id="professor"> 
+            <h6 class="text-center">Professor</h6> 
+            <h1 class="count text-center" style="background-color: #ddd;"></h1>
+          </div>
+          <div class="col-4" id="foreign_academician"> 
+            <h6 class="text-center">Foreign Academician</h6> 
+            <h1 class="count text-center" style="background-color: #ddd;"></h1>
+          </div>
+          <div class="col-4" id="doctor_faculty_member">
+            <h6 class="text-center">Doctor Faculty Member</h6> 
+            <h1 class="count text-center" style="background-color: #ddd;"></h1>
+          </div>
+        </div>
+
+
+        
+      </div>
+    </div>
+
+
+
+  </div>
+</section>
+<!-- /section -->
+
+<!-- footer -->
+<footer>
+
+  <!-- footer content -->
+  <div class="footer bg-footer section border-bottom">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+                  <!-- logo -->
+                  <a class="logo-footer" href="/"><img class="img-fluid mb-4"
+                          src="/static/template/images/logo.png" alt="logo"></a>
+                  <ul class="list-unstyled">
+                      <li class="mb-2">23621 15 Mile Rd #C104, Clinton MI, 48035, New York, USA</li>
+                      <li class="mb-2">+90 534 683 00 34</li> 
+                      <li class="mb-2">akyuzmursel21@gmail.com</li>
+                  </ul>
+              </div>
+              <!-- company -->
+              <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                  <h4 class="text-white mb-5">Universities</h4>
+                  <ul class="list-unstyled">
+                      <li class="mb-3"><a class="text-color" href="/universities">Universities</a></li>
+                      <li class="mb-3"><a class="text-color" href="/programs">Programs</a></li>
+                  </ul>
+              </div>
+              <!-- links -->
+              <div class="col-lg-4 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                  <h4 class="text-white mb-5">Why Turkey</h4>
+                  <ul class="list-unstyled">
+                      <li class="mb-3"><a class="text-color" href="/why-turkey">10 Reasons to Study in Turkey</a></li>
+                      <li class="mb-3"><a class="text-color" href="/edu-sys">Turkish Higher Education System</a></li>
+
+                  </ul>
+              </div>
+              <!-- support -->
+              <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                  <h4 class="text-white mb-5">Pages</h4>
+                  <ul class="list-unstyled">
+                      <li class="mb-3"><a class="text-color" href="/contact">Contact</a></li>
+                      <li class="mb-3"><a class="text-color" href="/about-us">About Us</a></li>
+                      <li class="mb-3"><a class="text-color" href="/contact">Cities</a></li>
+                      <li class="mb-3"><a class="text-color" href="/tutorial">Tutorial</a></li> 
+                      <li class="mb-3"><a class="text-color" href="/all-fraq">Frequently Asked Questions</a></li>
+                  </ul>
+              </div> 
+          </div>
+      </div>
+  </div>
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-7 text-sm-left text-center">
+                  <p class="mb-0">Copyright
+                      <script>
+                          var CurrentYear = new Date().getFullYear()
+                          document.write(CurrentYear)
+                      </script>
+                      © 
+                  </p>
+              </div>
+              <div class="col-sm-5 text-sm-right text-center">
+                  <ul class="list-inline">
+                      <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                                  class="ti-facebook text-primary"></i></a></li>
+                      <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                                  class="ti-twitter-alt text-primary"></i></a></li>
+                      <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                                  class="ti-linkedin text-primary"></i></a></li>
+                      <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i
+                                  class="ti-instagram text-primary"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+    <!-- jQuery -->
+    <script src="/static/template/plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="/static/template/plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="/static/template/plugins/slick/slick.min.js"></script>
+    <!-- aos -->
+    <script src="/static/template/plugins/aos/aos.js"></script>
+    <!-- venobox popup -->
+    <script src="/static/template/plugins/venobox/venobox.min.js"></script>
+    <!-- filter -->
+    <script src="/static/template/plugins/filterizr/jquery.filterizr.min.js"></script>
+    <!-- google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+    <script src="plugins/google-map/gmap.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Main Script -->
+    <script src="/static/template/js/script.js"></script>
+    <script src="/static/js/utils/util.js"></script>
+    <script src="/static/js/utils/components.js"></script>
+    <script src="/static/js/pages/universityDetail.js"></script>
+
+</body>
+</html>
